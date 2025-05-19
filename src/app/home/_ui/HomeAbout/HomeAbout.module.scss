@@ -1,0 +1,26 @@
+@import '@/styles/variables.scss';
+
+.aboutUs__content{
+    max-width: 100vw;
+    min-height: 100%;
+    background: linear-gradient(90deg, #2A88F3 0%, #9482DA 70%, #E352C8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: $text-light;
+
+    .aboutUs__content__image{
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 16px; 
+    }
+
+    .aboutUs__content__main{
+        width: 50%;
+    }
+}

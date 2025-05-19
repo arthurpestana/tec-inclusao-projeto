@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './HomeAbout.module.scss';
 import { HeaderTitle } from '@/components/comp/HeaderTitle';
 import Image from 'next/image';
+import aboutUs from "../../../../lib/data/aboutUs.json"
 
 export const HomeAbout = () => {
     return (
@@ -11,19 +12,19 @@ export const HomeAbout = () => {
                     src='/images/picture.png'
                     alt='Sobre nós'
                     width={500}
-                    height={500}
+                    height={300}
                     objectFit='cover'
                     priority
                 />
             </div>
             <div className={styles.aboutUs__content__main}>
                 <HeaderTitle
-                    title='Sobre nós'
-                    subtitle='Subtitle'
+                    title='Tec inclusão'
+                    subtitle='Sobre nós'
                     align='flex-start'
                 />
                 <div className={styles.aboutUs__content__main__text}>
-                    <p></p>
+                    <p>{aboutUs.Description}</p>
                 </div>
                 <div className={styles.aboutUs__content__main__eventsQuant}>
                     <div>

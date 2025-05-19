@@ -1,0 +1,50 @@
+@import '@/styles/variables.scss';
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-image: url('/images/picture.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0px 0px 96px 256px;
+
+    .banner__content__main {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+
+        .banner__content__main__information {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 50%;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $text-light;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                font-size: 78px;
+                font-weight: 700;
+                color: $text-light;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: $text-light;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

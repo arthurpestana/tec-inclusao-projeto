@@ -1,0 +1,73 @@
+@import '@/styles/variables.scss';
+
+.button__content {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.2s;
+}
+
+.button__content__text {
+    background-color: transparent;
+    border: none;
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        color: $text-primary;
+    }
+
+    &:hover {
+        background-color: $brand-primary-5;
+        color: $text-light;
+    }
+}
+
+.button__content__outlined {
+    background-color: transparent;
+    border: 2px solid $brand-primary;
+    padding: 14px 48px;
+    border-radius: 32px;
+
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: $text-primary;
+    }
+
+    &:hover {
+        background-color: darken($brand-primary, 10%);
+        border: 2px solid darken($brand-primary, 10%);
+
+        span {
+            color: $text-light;
+        }
+    }
+}
+
+.button__content__contained {
+    background-color: $brand-primary;
+    padding: 14px 48px;
+    border-radius: 32px;
+
+    span {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: $text-light;
+    }
+
+    &:hover {
+        background-color: darken($brand-primary, 10%);
+    }
+}
+
+.button__content__onlyIcon {
+    padding: 8px;
+    aspect-ratio: 1;
+}

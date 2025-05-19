@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "label": "Sobre Nós",
+    "href": "/home"
+  },
+  {
+    "label": "Cronograma",
+    "href": "/home/atividades"
+  },
+  {
+    "label": "Localização",
+    "href": "/home/atividades"
+  },
+  {
+    "label": "Contate-nos",
+    "href": "/contato",
+    "isButton": true
+  }
+]

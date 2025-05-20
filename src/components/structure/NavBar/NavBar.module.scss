@@ -21,4 +21,31 @@
         align-items: center;
         gap: 24px;
     }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px;
+
+        .navBar__content__items {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 12px;
+        gap: 12px;
+
+        .navBar__content__logo {
+            gap: 4px;
+        }
+
+        .navBar__content__items {
+            gap: 12px;
+        }
+    }
 }

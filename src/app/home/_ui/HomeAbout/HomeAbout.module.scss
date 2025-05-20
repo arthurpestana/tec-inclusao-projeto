@@ -23,4 +23,56 @@
     .aboutUs__content__main{
         width: 50%;
     }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 48px 32px;
+
+        .aboutUs__content__image {
+            width: 300px;
+            height: 300px;
+        }
+
+        .aboutUs__content__main {
+            width: 100%;
+            text-align: center;
+
+            .aboutUs__content__main__eventsQuant {
+                justify-content: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 32px 16px;
+        gap: 24px;
+
+        .aboutUs__content__image {
+            width: 100%;
+            height: auto;
+        }
+
+        .aboutUs__content__main {
+            width: 100%;
+            text-align: center;
+
+            .aboutUs__content__main__text p {
+                font-size: 14px;
+            }
+
+            .aboutUs__content__main__eventsQuant {
+                margin-top: 16px;
+                justify-content: center;
+
+                span:first-child {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                span:last-child {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

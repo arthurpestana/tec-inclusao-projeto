@@ -27,7 +27,7 @@ export const HomeAbout = () => {
                     <p>{aboutUs.Description}</p>
                 </div>
                 <div className={styles.aboutUs__content__main__eventsQuant}>
-                    <div>
+                    <div className={styles.aboutUs__content__main__eventsQuant__Count}>
                         <span>5+</span>
                     </div>
                     <span>Atividades</span>

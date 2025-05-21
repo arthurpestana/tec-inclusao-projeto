@@ -1,51 +1,50 @@
+
 @import "@/styles/variables.scss";
 
 .navBar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background-color: $background-primary;
+  border-bottom: 1px solid $line-color-05;
+  position: relative;
+
+  &__logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 0px 32px;
-    background-color: $background-primary;
-    border-bottom: 1px solid $line-color-05;
+  }
 
-    .navBar__content__logo {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .navBar__content__items {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 
     @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        padding: 16px;
-
-        .navBar__content__items {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-            width: 100%;
-        }
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: $background-primary;
+      padding: 16px 0;
+      gap: 16px;
+      z-index: 20;
     }
 
-    @media screen and (max-width: 480px) {
-        padding: 12px;
-        gap: 12px;
-
-        .navBar__content__logo {
-            gap: 4px;
-        }
-
-        .navBar__content__items {
-            gap: 12px;
-        }
+    &.open {
+      @media screen and (max-width: 768px) {
+        display: flex;
+      }
     }
+  }
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 }

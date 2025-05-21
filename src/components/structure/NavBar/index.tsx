@@ -21,8 +21,8 @@ export const NavBar = () => {
         <Image
           src="/images/logo.png"
           alt="Logo"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           priority
         />
       </div>
@@ -40,6 +40,7 @@ export const NavBar = () => {
                 label={item.label}
                 onClick={() => window.open(item.href, "_blank")}
                 variant="outlined"
+                darkMode={true}
               />
             );
           }

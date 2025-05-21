@@ -1,0 +1,8 @@
+@import '@/styles/variables.scss';
+
+.home__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}

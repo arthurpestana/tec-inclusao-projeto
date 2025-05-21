@@ -13,22 +13,11 @@
         transition: ease-in-out 0.2s;
         position: relative;
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            background-color: $brand-primary;
-            bottom: -4px;
-            left: 0;
-            transition: width 0.3s ease-in-out;
-        }
-
         span {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
             line-height: 20px;
-            color: $text-dark;
+            color: $text-light;
         }
 
         &:hover {

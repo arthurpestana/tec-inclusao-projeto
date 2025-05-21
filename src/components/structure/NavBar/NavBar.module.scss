@@ -5,10 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
-  background-color: $background-primary;
-  border-bottom: 1px solid $line-color-05;
+  padding: 8px 64px;
+  background: linear-gradient(
+    to bottom,
+    $foreground-primary 10%,
+    transparent
+  );
   position: relative;
+  width: 100%;
+  z-index: 1;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -17,12 +22,12 @@
     z-index: 20;
   }
 
-  &__logo {
+  .navBar__content__logo {
     display: flex;
     align-items: center;
   }
 
-  &__items {
+  .navBar__content__items {
     display: flex;
     align-items: center;
     gap: 24px;

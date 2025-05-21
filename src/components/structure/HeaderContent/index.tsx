@@ -1,10 +1,18 @@
-import { NavBar } from "../NavBar"
 import styles from "./HeaderContent.module.scss"
 
-export const HeaderContent = () => {
+type HeaderContentProps = {
+    children: React.ReactNode;
+    height?: string;
+    style?: React.CSSProperties;
+}
+
+export const HeaderContent = ({ children, height, style }: HeaderContentProps) => {
     return (
-        <header className={styles.header__content}>
-            <NavBar />
+        <header
+            className={styles.header__content}
+            style={{ height: height, ...style }}
+        >
+            {children}
         </header>
     )
 }

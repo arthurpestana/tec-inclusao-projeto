@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "@/styles/globals.scss";
-import { HeaderContent } from "@/components/structure/HeaderContent";
-import { MainContent } from "@/components/structure/MainContent";
 
-const geistSans = Montserrat({
+const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -24,11 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${geistSans.className}`}>
-        <HeaderContent />
-        <MainContent>
-          {children}
-        </MainContent>
+      <body className={`${montserrat.className}`}>
+        {children}
       </body>
     </html>
   );

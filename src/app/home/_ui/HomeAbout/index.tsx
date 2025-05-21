@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './HomeAbout.module.scss';
 import { HeaderTitle } from '@/components/comp/HeaderTitle';
 import Image from 'next/image';
-import aboutUs from "../../../../lib/data/aboutUs.json"
+import aboutUs from "@/lib/data/home/aboutUsInfo.json";
 
 export const HomeAbout = () => {
     return (

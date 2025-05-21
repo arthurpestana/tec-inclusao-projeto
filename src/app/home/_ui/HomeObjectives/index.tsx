@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './HomeObjectives.module.scss'
 import { Button } from '@/components/comp/Button'
 import { HeaderTitle } from '@/components/comp/HeaderTitle'
-import ObjectivesInfo from "../../../../lib/data/homeObjectives.json"
+import ObjectivesInfo from "@/lib/data/home/objectivesInfo.json"
 
 export const HomeObjectives = () => {
     return (

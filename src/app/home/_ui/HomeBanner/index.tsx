@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from './HomeBanner.module.scss';
 import { Button } from '@/components/comp/Button';
-import HomeInfo from "../../../../lib/data/homeInfo.json"
+import HomeInfo from "@/lib/data/home/bannerInfo.json"
 
 export const HomeBanner = () => {
     return (
@@ -19,6 +19,7 @@ export const HomeBanner = () => {
                         variant='contained'
                         label='Inscreva-se'
                         onClick={() => {}}
+                        darkMode={true}
                     />
                 </div>
             </div>

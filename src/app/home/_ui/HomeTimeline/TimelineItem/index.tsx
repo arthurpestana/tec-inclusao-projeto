@@ -1,21 +1,32 @@
 import React from 'react';
 import styles from './TimelineItem.module.scss'
 import { Button } from '@/components/comp/Button';
+import { useRouter } from 'next/navigation';
 import { AccessTimeOutlined, LocationOnOutlined } from '@mui/icons-material';
+import { TimelineItemData } from '@/lib/types/TimelineItemData';
 
-type TimelineItemProps = {
-    date: {
-        day: string;
-        month: string;
-        year: string;
+type TimelineItemProps = TimelineItemData;
+
+
+export const TimelineItem = ({ date, title, location, time, type }: TimelineItemProps) => {
+
+    const router = useRouter();
+
+    const handleClick = () => {
+        const query = new URLSearchParams({
+        day: date.day,
+        month: date.month,
+        year: date.year,
+        title,
+        location,
+        time,
+        type
+        }).toString();
+
+        router.push(`/events?${query}`);
     }
-    title: string;
-    location: string;
-    time: string;
-    onClick: () => void;
-}
 
-export const TimelineItem = ({ date, title, location, time, onClick }: TimelineItemProps) => {
+
     return (
         <div className={styles.timelineItem__content}>
             <div className={styles.timelineItem__content__date}>
@@ -36,9 +47,9 @@ export const TimelineItem = ({ date, title, location, time, onClick }: TimelineI
                 <Button 
                     variant='contained'
                     label='Ver mais'
-                    onClick={onClick}
+                    onClick={handleClick}
                 />
             </div>
         </div>
-    )
+    );
 }

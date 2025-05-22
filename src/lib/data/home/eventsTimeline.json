@@ -1,14 +1,15 @@
 [
   {
-    "title": "Workshop: Inteligência Artificial em Menos de 1 Hora",
+    "title": "Inteligência Artificial em Menos de 1 Hora",
     "responsibles": ["Higor Valuar", "Iara Ferro"],
     "location": "Unitins",
     "date": {
       "day": "22",
-      "month": "Maio",
+      "month": "05",
       "year": "2025"
     },
-    "time": "10:00 - 12:00"
+    "time": "10:00 - 12:00",
+    "type": "Workshop"
   },
   {
     "title": "Workshop Interativo: Guia Acadêmico",
@@ -16,10 +17,11 @@
     "location": "Unitins",
     "date": {
       "day": "22",
-      "month": "Maio",
+      "month": "05",
       "year": "2025"
     },
-    "time": "14:00 - 16:00"
+    "time": "14:00 - 16:00",
+    "type": "Workshop"
   },
   {
     "title": "Workshop Interativo: Segurança Digital no Dia a Dia",
@@ -27,9 +29,10 @@
     "location": "Unitins",
     "date": {
       "day": "22",
-      "month": "Maio",
+      "month": "05",
       "year": "2025"
     },
-    "time": "16:00 - 18:00"
+    "time": "16:00 - 18:00",
+    "type": "Workshop"
   }
 ]

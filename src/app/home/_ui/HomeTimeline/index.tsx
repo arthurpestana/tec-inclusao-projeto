@@ -13,10 +13,10 @@ export const HomeTimeline = () => {
                     <TimelineItem 
                         key={index}
                         title={event.title}
-                        onClick={() => { }}
                         date={event.date}
                         location={event.location}
                         time={event.time}
+                        type={event.type}
                     />
                 ))}
             </div>

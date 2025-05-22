@@ -1,0 +1,42 @@
+@import '@/styles/variables.scss';
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: darken($foreground-primary, 10%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 64px;
+    gap: 32px;
+    margin-top: 32px;
+
+    .footer__content__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        span {
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            color: $text-light;
+        }
+    }
+
+    .footer__content__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .footer__content__socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+}

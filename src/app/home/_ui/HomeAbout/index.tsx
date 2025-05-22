@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './HomeAbout.module.scss';
-import { HeaderTitle } from '@/components/comp/HeaderTitle';
+import { SectionTitle } from '@/components/comp/SectionTitle';
 import Image from 'next/image';
 import aboutUs from "@/lib/data/home/aboutUsInfo.json";
 
@@ -9,22 +9,23 @@ export const HomeAbout = () => {
         <div className={styles.aboutUs__content} id='aboutUs'>
             <div className={styles.aboutUs__content__image}>
                 <Image 
-                    src='/images/picture.png'
+                    src='/images/aboutUs-image.png'
                     alt='Sobre nós'
-                    width={500}
-                    height={300}
+                    width={450}
+                    height={350}
                     objectFit='cover'
+                    style={{ objectFit: 'cover' }}
                     priority
                 />
             </div>
             <div className={styles.aboutUs__content__main}>
-                <HeaderTitle
+                <SectionTitle
                     title='Tec inclusão'
                     subtitle='Sobre nós'
                     align='flex-start'
                 />
                 <div className={styles.aboutUs__content__main__text}>
-                    <p>{aboutUs.Description}</p>
+                    <p>{aboutUs.description}</p>
                 </div>
                 <div className={styles.aboutUs__content__main__eventsQuant}>
                     <div className={styles.aboutUs__content__main__eventsQuant__Count}>

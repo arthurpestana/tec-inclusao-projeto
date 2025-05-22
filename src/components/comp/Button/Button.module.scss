@@ -13,6 +13,7 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
+    transition: ease-in-out 0.2s;
 
     span {
         font-size: 1rem;
@@ -33,7 +34,7 @@
         &:hover {
             background-color: $brand-primary-5;
             span {
-                color: $text-primary;
+                color: $text-secondary;
             }
         }
     }
@@ -43,7 +44,7 @@
     cursor: pointer;
     background-color: transparent;
     border: 2px solid $foreground-primary;
-    padding: 14px 48px;
+    padding: 12px 48px;
     border-radius: 32px;
 
     span {
@@ -82,7 +83,7 @@
 .button__content__contained {
     cursor: pointer;
     background-color: $foreground-primary;
-    padding: 14px 48px;
+    padding: 12px 48px;
     border-radius: 32px;
 
     span {
@@ -104,7 +105,7 @@
         }
 
         &:hover {
-            background-color: $foreground-primary;
+            background-color: darken($foreground-primary, 10%);
             span {
                 color: $text-light;
             }

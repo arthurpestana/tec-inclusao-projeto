@@ -6,57 +6,79 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    color: $text-light;
+    gap: 32px;
+    padding: 0px 64px;
 
     .aboutUs__content__image{
-        width: 500px;
-        height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
         border-radius: 16px; 
     }
 
     .aboutUs__content__main{
         width: 50%;
-        text-align: justify;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+
         .aboutUs__content__main__text{
             min-width: 400px;
             max-width: 650px;
             line-height: 1.5;
-            padding: 20px 0;
-            text-transform: capitalize;
+
+            p {
+                text-align: justify;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: justify;
+                color: $text-dark;
+                word-break: break-word;
+                overflow-wrap: break-word;
+                max-width: 100%;
+            }
         }
 
-        .aboutUs__content__main__eventsQuant{
+        .aboutUs__content__main__eventsQuant {
             display: flex;
             align-items: center;
             gap: 5px;
 
-            .aboutUs__content__main__eventsQuant__Count{
-                width: 30px;
-                height: 30px;
-                background-color: #000000;
-                font-weight: 500;
+            .aboutUs__content__main__eventsQuant__Count {
+                width: 32px;
+                height: 32px;
+                background-color: $foreground-primary;
                 border: 2px solid #FFFFFF;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $text-light;
+                }
             }
         }
     }
 
-    @media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUs__content {
         flex-direction: column;
         padding: 48px 32px;
 
         .aboutUs__content__image {
-            width: 300px;
-            height: 300px;
+
+            img {
+                width: 400px;
+                height: 300px;
+            }
+            
         }
 
         .aboutUs__content__main {
@@ -68,8 +90,10 @@
             }
         }
     }
+}
 
-    @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    .aboutUs__content {
         padding: 32px 16px;
         gap: 24px;
 

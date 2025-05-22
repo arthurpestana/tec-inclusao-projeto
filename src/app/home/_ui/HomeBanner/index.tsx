@@ -10,9 +10,9 @@ export const HomeBanner = () => {
         <div className={styles.banner__content}>
             <div className={styles.banner__content__main}>
                 <div className={styles.banner__content__main__information}>
-                    <h3>{HomeInfo.Above}</h3>
-                    <h1>{HomeInfo.Title}</h1>
-                    <p>{HomeInfo.Description}</p>
+                    <h3>{HomeInfo.above}</h3>
+                    <h1>{HomeInfo.title}</h1>
+                    <p>{HomeInfo.description}</p>
                 </div>
                 <div className={styles.banner__content__main__button}>
                     <Button 

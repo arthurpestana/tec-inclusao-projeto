@@ -9,6 +9,11 @@ import { HeaderContent } from '@/components/structure/HeaderContent';
 import { NavBar } from '@/components/structure/NavBar';
 import { MainContent } from '@/components/structure/MainContent';
 
+import { FooterContent } from '@/components/structure/FooterContent';
+import { HomeTimeline } from './_ui/HomeTimeline';
+import { HomeLocation } from './_ui/HomeLocation';
+import { HomePartners } from './_ui/HomePartners';
+
 export default function HomePage() {
     return (
         <div className={styles.home__page}>
@@ -17,9 +22,13 @@ export default function HomePage() {
                 <HomeBanner/>
             </HeaderContent>
             <MainContent>
+                <HomePartners/>
                 <HomeAbout />
                 <HomeObjectives />
+                <HomeTimeline />
+                <HomeLocation/>
             </MainContent>
+            <FooterContent/>
         </div>
     )
 }

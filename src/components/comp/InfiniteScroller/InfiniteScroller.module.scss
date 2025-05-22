@@ -1,0 +1,63 @@
+.infiniteScroller__content {
+    position: relative;
+    width: 100vw;
+    height: 110px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .infiniteScroller__content__tracker {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: max-content;
+        width: 120vw;
+        gap: 42px;
+        animation: scrollLeft 20s linear infinite;
+
+        &.scrollRight {
+            animation-name: scrollRight;
+        }
+
+        &.scrollLeft {
+            animation-name: scrollLeft;
+        }
+
+        .infiniteScroller__content__tracker__item {
+            flex: 0 0 auto;
+            width: 132px;
+
+            .infiniteScroller__content__tracker__item__image {
+                width: 100%;
+                border-radius: inherit;
+                transition: all 0.5s ease-in;
+                user-select: none;
+
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

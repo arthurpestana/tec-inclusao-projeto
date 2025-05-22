@@ -1,68 +1,26 @@
 .objectives__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  width: 100vw;
+  max-width: 100vw;
+  gap: 32px;
+  padding: 64px 64px;
 
-    & > *:first-child {
-        margin-bottom: 3rem;
-    }
+  .objectives__content__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+  }
 
-    &__main {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 2rem;
-        width: 100%;
-        max-width: 1200px;
-        position: relative;
-        z-index: 1;
-
-        &__item {
-        position: relative;
-        width: 250px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.4);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        padding: 1rem;
-        text-align: center;
-
-        &__image {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 50%;
-            background-size: cover;
-            background-position: center;
-            z-index: 2;
-        }
-
-        &__text {
-            position: relative;
-            z-index: 3;
-            margin-top: auto;
-            padding-top: 60%;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #333;
-
-                span {
-                display: block;
-                padding: 1rem;
-                }
-            }
-        }
-    }
-
-  &__button {
-    margin-top: 3rem;
-    z-index: 2;
+  .objectives__content__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
   }
 }

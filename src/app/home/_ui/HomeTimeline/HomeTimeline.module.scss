@@ -1,0 +1,19 @@
+@import '@/styles/variables.scss';
+
+.homeTimeline__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 64px;
+    gap: 32px;
+
+    .homeTimeline__content__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        width: 80%;
+    }
+}

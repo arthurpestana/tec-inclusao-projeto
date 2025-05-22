@@ -1,0 +1,15 @@
+@import "@/styles/variables.scss";
+
+.event_sub_description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 36px;
+    border-bottom: 2px solid $brand-primary-5;
+
+    &_info{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+}

@@ -1,3 +1,5 @@
+'use client'
+
 import style from './page.module.scss'
 import { useSearchParams } from 'next/navigation';
 import eventsTimeLine from '../../../../lib/data/home/eventsTimeline.json';
@@ -9,7 +11,7 @@ export const EventDescription = () => {
         id: searchParams.get('id') || '',
     }
 
-    const event = eventsTimeLine.find( event => event.id == Number(eventData.id));
+    const event = eventsTimeLine.find((event) => event.id == Number(eventData.id));
 
     if (!event) {
         return <p>Evento não encontrado.</p>;

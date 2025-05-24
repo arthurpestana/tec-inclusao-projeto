@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/components/comp/Button';
 import style from './page.module.scss'
 import { useSearchParams } from 'next/navigation';

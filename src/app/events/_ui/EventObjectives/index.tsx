@@ -1,3 +1,5 @@
+'use client'
+
 import style from './page.module.scss'
 import { CircleAlert } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';

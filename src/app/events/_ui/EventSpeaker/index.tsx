@@ -1,3 +1,5 @@
+'use client'
+
 import style from './page.module.scss';
 import { useSearchParams } from 'next/navigation';
 import eventTimeline from '../../../../lib/data/home/eventsTimeline.json';

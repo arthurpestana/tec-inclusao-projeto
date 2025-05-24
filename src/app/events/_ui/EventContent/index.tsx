@@ -1,3 +1,5 @@
+'use client'
+
 import style from './page.module.scss'
 import { EventSubDescription } from "../EventSubDescription";
 import { EventDescription } from '../EventDescription';

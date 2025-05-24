@@ -1,3 +1,5 @@
+'use client'
+
 import { CardEvent } from '@/components/structure/CardEvent';
 import style from './page.module.scss'
 

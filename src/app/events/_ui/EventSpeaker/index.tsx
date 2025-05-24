@@ -16,6 +16,7 @@ export const EventSpeaker = () => {
 
     return(
         <div className={style.event_speaker_content}>
+            <h1>Organizadores</h1>
             <SlideComponent/>
         </div>
     );

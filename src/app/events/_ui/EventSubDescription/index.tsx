@@ -3,7 +3,7 @@ import style from './page.module.scss'
 import { useSearchParams } from 'next/navigation';
 import eventsTimeLine from '../../../../lib/data/home/eventsTimeline.json';
 
-export function EventSubDescription(){
+export const EventSubDescription = () => {
 
     const searchParams = useSearchParams();
 
@@ -40,7 +40,7 @@ export function EventSubDescription(){
 
             <Button
                 label="Inscreva-se"
-                onClick={() => window.open("https://youtube.com", "_blank")}
+                onClick={() => window.open("https://www.unitins.br/Eventos/Inscricao/2244", "_blank")}
                 variant="outlined"
                 darkMode={false}
                 />

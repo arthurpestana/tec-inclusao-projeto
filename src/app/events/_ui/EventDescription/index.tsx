@@ -2,7 +2,7 @@ import style from './page.module.scss'
 import { useSearchParams } from 'next/navigation';
 import eventsTimeLine from '../../../../lib/data/home/eventsTimeline.json';
 
-export function EventDescription(){
+export const EventDescription = () => {
     const searchParams = useSearchParams();
     
     const eventData = {

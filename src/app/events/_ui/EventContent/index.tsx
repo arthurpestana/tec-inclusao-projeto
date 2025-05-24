@@ -6,7 +6,7 @@ import { EventSpeaker } from '../EventSpeaker';
 import { MoreEvents } from '../MoreEvents';
 import { FooterContent } from '@/components/structure/FooterContent';
 
-export function EventContent(){
+export const EventContent = () => {
     return(
         <div className={style.event_content}>
             <EventSubDescription/>

@@ -1,10 +1,10 @@
 import { CardEvent } from '@/components/structure/CardEvent';
 import style from './page.module.scss'
 
-export function MoreEvents(){
+export const MoreEvents = () => {
     return(
         <div className={style.more_events_content}>
-            <h1>Veja Mais</h1>
+            <h1>Veja Também</h1>
 
             <div className={style.more_events_content_cards}>
                 <CardEvent

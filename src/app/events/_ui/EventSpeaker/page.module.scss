@@ -7,36 +7,4 @@
     width: 100%;
     height: 500px;
     background: linear-gradient($brand-fourth, $brand-primary);
-
-    &_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        height: 100%;
-        color: #FFFFFF;
-        gap: 20px;
-
-        &_info{
-            width: 70%;
-            height: 100%;
-            display: flex;
-            text-align: justify;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2em;
-            gap: 30px;
-
-            &_user{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 80px;
-                height: 80px;
-                border: 5px solid #FFFFFF;
-                border-radius: 50%;
-            }
-        }
-    }
 }

@@ -3,7 +3,7 @@ import { CircleAlert } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 import eventsTimeLine from '../../../../lib/data/home/eventsTimeline.json';
 
-export function EventObjectives(){
+export const EventObjectives = () => {
 
     const searchParams = useSearchParams();
 

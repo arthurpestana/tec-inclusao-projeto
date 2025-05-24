@@ -1,35 +1,65 @@
 [
   {
-    "title": "Inteligência Artificial em Menos de 1 Hora",
+    "id": 1,
+    "title": "Segurança Digital no Dia a Dia",
     "responsibles": ["Higor Valuar", "Iara Ferro"],
-    "location": "Unitins",
+    "speaker": "A CONFIRMAR",
+    "location": "UNITINS - Universidade Estadual do Tocantins",
+    "description": "O workshop tem como objetivo conscientizar o público sobre os principais riscos digitais enfrentados no Brasil e ensinar práticas simples e eficazes para se proteger no uso cotidiano de celulares, redes sociais, bancos e internet. A apresentação trará dicas práticas de segurança, exemplos reais de golpes (como fraudes por QR Code, clonagem de WhatsApp e deepfakes), além de orientações sobre autenticação multifator, senhas fortes, uso de VPNs e antivírus. O foco é ajudar pessoas comuns a adotarem hábitos digitais mais seguros, prevenindo prejuízos financeiros e a exposição de dados pessoais.",
+    "objectives": [
+      "Compreender os principais tipos de golpes digitais em circulação no Brasil.",
+
+      "Aprender práticas de segurança digital aplicáveis ao uso cotidiano da internet.",
+
+      "Desenvolver habilidades para reconhecer ameaças virtuais e reagir preventivamente."
+    ],
     "date": {
-      "day": "22",
-      "month": "05",
+      "day": "11",
+      "month": "06",
       "year": "2025"
     },
     "time": "10:00 - 12:00",
     "type": "Workshop"
   },
   {
-    "title": "Workshop Interativo: Guia Acadêmico",
+    "id": 2,
+    "title": "Workshop Interativo: Inteligência Artificial em Menos de 1 Hora",
     "responsibles": ["Gabriela D", "Tallita", "Amanda"],
-    "location": "Unitins",
+    "speaker": "Iara Martins Ferro & Higor Valuar Bailoina",
+    "location": "UNITINS - Universidade Estadual do Tocantins",
+    "description": "Uma introdução prática e interativa à inteligência artificial, com linguagem acessível e exemplos do dia a dia. O público será convidado a refletir sobre o uso da IA em serviços como Netflix, Google Maps, redes sociais e assistentes virtuais. A atividade inclui explicações simples sobre o funcionamento da IA, seus tipos e uma demonstração prática com ferramentas como o ChatGPT ou geradores de imagem. Ao final, um breve debate abordará questões como o impacto da IA no mercado de trabalho e o seu futuro.",
+    "objectives": [
+      "Apresentar o conceito de inteligência artificial de forma didática e interativa.",
+
+      "Demonstrar como a IA está presente no cotidiano de forma prática.",
+
+      "Estimular a reflexão crítica sobre os impactos sociais da IA."
+    ],
     "date": {
-      "day": "22",
-      "month": "05",
+      "day": "11",
+      "month": "06",
       "year": "2025"
     },
     "time": "14:00 - 16:00",
     "type": "Workshop"
   },
   {
+    "id": 3,
     "title": "Workshop Interativo: Segurança Digital no Dia a Dia",
     "responsibles": ["Victor Augusto", "Thallyson"],
-    "location": "Unitins",
+    "speaker": "A CONFIRMAR",
+    "location": "UNITINS - Universidade Estadual do Tocantins",
+    "description": "A ação de extensão visa capacitar estudantes na produção de trabalhos acadêmicos como TCCs, artigos e resenhas, utilizando uma abordagem prática e didática. Destinada a iniciantes e alunos em fase de elaboração de projetos, a atividade desenvolve habilidades técnicas e comunicacionais essenciais, com foco em metodologias e normas acadêmicas. Serão abordadas também dicas para apresentação oral e haverá exercícios práticos e quizzes para fixação dos conteúdos.",
+    "objectives": [
+      "Capacitar estudantes na estruturação e elaboração de trabalhos acadêmicos conforme as normas.",
+
+      "Introduzir metodologias de pesquisa científica e técnicas de revisão bibliográfica.",
+
+      "Promover a autonomia e segurança na preparação e apresentação de projetos acadêmicos."
+    ],
     "date": {
-      "day": "22",
-      "month": "05",
+      "day": "11",
+      "month": "06",
       "year": "2025"
     },
     "time": "16:00 - 18:00",

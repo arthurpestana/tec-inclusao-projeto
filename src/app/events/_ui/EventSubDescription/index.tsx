@@ -1,22 +1,20 @@
 import { Button } from '@/components/comp/Button';
 import style from './page.module.scss'
 import { useSearchParams } from 'next/navigation';
-import { TimelineItemData } from '@/lib/types/TimelineItemData';
+import eventsTimeLine from '../../../../lib/data/home/eventsTimeline.json';
 
 export function EventSubDescription(){
 
     const searchParams = useSearchParams();
 
-    const eventData: TimelineItemData = {
-        date: {
-            day: searchParams.get('day') || '',
-            month: searchParams.get('month') || '',
-            year: searchParams.get('year') || '',
-        },
-        title: searchParams.get('title') || '',
-        location: searchParams.get('location') || '',
-        time: searchParams.get('time') || '',
-        type: searchParams.get('type') || ''
+    const eventData = {
+        id: searchParams.get('id') || '',
+    }
+
+    const event = eventsTimeLine.find( event => event.id == Number(eventData.id));
+
+    if (!event) {
+        return <p>Evento não encontrado.</p>;
     }
 
     return(
@@ -24,19 +22,19 @@ export function EventSubDescription(){
             <div className={style.event_sub_description_info}>
                     <div className={style.event_sub_description_info_item}>
                         <h3>Data</h3>
-                        <p>{`${eventData.date.day}/${eventData.date.month}/${eventData.date.year}`}</p>
+                        <p>{`${event.date.day}/${event.date.month}/${event.date.year}`}</p>
                     </div>
                     <div className={style.event_sub_description_info_item}>
                         <h3>Horário</h3>
-                        <p>{eventData.time}</p>
+                        <p>{event.time}</p>
                     </div>
                     <div className={style.event_sub_description_info_item}>
                         <h3>Tipo do evento</h3>
-                        <p>{eventData.type}</p>
+                        <p>{event.type}</p>
                     </div>
                     <div className={style.event_sub_description_info_item}>
                         <h3>Localização</h3>
-                        <p>{eventData.location}</p>
+                        <p>{event.location}</p>
                     </div>
             </div>
 

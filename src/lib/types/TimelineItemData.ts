@@ -1,11 +1,11 @@
 export type TimelineItemData = {
+  id: string,
+  title: string;
+  location: string;
   date: {
     day: string;
     month: string;
     year: string;
   };
-  title: string;
-  location: string;
-  time: string,
-  type: string
+  time: string
 };

@@ -4,9 +4,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px;
     width: 100%;
-    height: 250px;
+    height: auto;
     border-bottom: 2px solid $brand-primary-5;
 
     &_info{
@@ -19,6 +19,7 @@
             padding: 6px 6px;
             border-radius: 12px;
             border: 3px dotted $dark-100;
+            font-size: 1.4em;
         }
     }
 }

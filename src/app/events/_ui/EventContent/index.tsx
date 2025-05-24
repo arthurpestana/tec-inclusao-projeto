@@ -4,6 +4,7 @@ import { EventDescription } from '../EventDescription';
 import { EventObjectives } from '../EventObjectives';
 import { EventSpeaker } from '../EventSpeaker';
 import { MoreEvents } from '../MoreEvents';
+import { FooterContent } from '@/components/structure/FooterContent';
 
 export function EventContent(){
     return(
@@ -13,6 +14,7 @@ export function EventContent(){
             <EventObjectives/>
             <EventSpeaker/>
             <MoreEvents/>
+            <FooterContent/>
         </div>
     );
 }

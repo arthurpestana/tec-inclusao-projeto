@@ -8,20 +8,12 @@ import { TimelineItemData } from '@/lib/types/TimelineItemData';
 type TimelineItemProps = TimelineItemData;
 
 
-export const TimelineItem = ({ date, title, location, time, type }: TimelineItemProps) => {
+export const TimelineItem = ({ date, title, location, time, id }: TimelineItemProps) => {
 
     const router = useRouter();
 
     const handleClick = () => {
-        const query = new URLSearchParams({
-        day: date.day,
-        month: date.month,
-        year: date.year,
-        title,
-        location,
-        time,
-        type
-        }).toString();
+        const query = new URLSearchParams({id}).toString();
 
         router.push(`/events?${query}`);
     }

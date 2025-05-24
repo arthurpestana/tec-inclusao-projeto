@@ -12,11 +12,11 @@ export const HomeTimeline = () => {
                 {eventsTimeline.map((event, index) => (
                     <TimelineItem 
                         key={index}
+                        id={event.id.toString()}
                         title={event.title}
-                        date={event.date}
                         location={event.location}
+                        date={event.date}
                         time={event.time}
-                        type={event.type}
                     />
                 ))}
             </div>

@@ -16,7 +16,7 @@ export const NavBar = () => {
 
   return (
     <nav className={styles.navBar__content}>
-      <div className={styles.navBar__content__logo} onClick={() => router.push('/')}>
+      <div className={styles.navBar__content__logo} onClick={() => router.push('/home')}>
         <Image
           src="/images/logo.png"
           alt="Logo"

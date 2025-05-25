@@ -8,12 +8,12 @@
     "href": "/home#aboutUs"
   },
   {
-    "label": "Localização",
-    "href": "/home#location"
-  },
-  {
     "label": "Cronograma",
     "href": "/home#timeline"
+  },
+  {
+    "label": "Localização",
+    "href": "/home#location"
   },
   {
     "label": "Inscrições",

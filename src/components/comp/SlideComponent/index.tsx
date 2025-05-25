@@ -6,8 +6,6 @@ import 'swiper/css/autoplay';
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 import style from './page.module.scss'
-import events from '@/lib/data/eventsTimeline.json';
-import { useSearchParams } from 'next/navigation';
 import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
@@ -21,17 +19,6 @@ type SlideComponentProps<T> = {
 };
 
 export const SlideComponent = <T extends DefaultSlide>({ items }: SlideComponentProps<T>) => {
-
-    const searchParams = useSearchParams();
-
-    const eventData = {
-        id: searchParams.get('id') || ''
-    }
-
-    const event = events.find(event => event.id == Number(eventData.id));
-
-    if (!event) return <p>Evento não encontrado</p>
-
     return(
         <Swiper 
         modules={[Autoplay, Pagination]}

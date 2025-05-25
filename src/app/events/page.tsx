@@ -1,5 +1,3 @@
-'use client'
-
 import { HeaderContent } from '@/components/structure/HeaderContent';
 import styles from './page.module.scss';
 import { NavBar } from '@/components/structure/NavBar';
@@ -7,6 +5,8 @@ import { EventContent } from './_ui/EventContent';
 import { FooterContent } from '@/components/structure/FooterContent';
 import { MainContent } from '@/components/structure/MainContent';
 import { MoreEvents } from './_ui/MoreEvents';
+import { Suspense } from 'react';
+import { Loading } from '@/components/comp/Loading';
 
 export default function EventsPage() {
     return (
@@ -15,7 +15,9 @@ export default function EventsPage() {
                 <NavBar />
             </HeaderContent>
             <MainContent>
-                <EventContent />
+                <Suspense fallback={<Loading />}>
+                    <EventContent />
+                </Suspense>
                 <MoreEvents />
             </MainContent>
             <FooterContent />

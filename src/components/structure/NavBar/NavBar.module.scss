@@ -74,6 +74,24 @@
 
 @media screen and (max-width: 1040px) {
   .navBar__content {
+    padding: 8px 32px;
+
+    .navBar__content__items {
+      gap: 16px;
+
+      a, span, button {
+        font-size: 0.9rem;
+      }
+
+      a > span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navBar__content {
     position: relative;
     z-index: 1;
 
@@ -102,6 +120,12 @@
         border-color: $foreground-primary !important;
         color: $text-primary !important;
         font-weight: 500;
+      }
+
+      a {
+        &::after {
+          background-color: $foreground-primary;
+        }
       }
 
       &.active {

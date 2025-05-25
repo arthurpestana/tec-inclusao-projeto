@@ -43,3 +43,14 @@
         }
     }
 }
+
+@media screen and (max-width: 1040px) {
+    .navItem__content {
+        .navItem__content__link {
+            span {
+                font-size: 0.9rem;
+            }
+        }
+    }
+    
+}

@@ -20,3 +20,39 @@
         color: $text-primary;
     }
 }
+
+@media screen and (max-width: 1040px) {
+    .sectionTitle__content {
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sectionTitle__content {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sectionTitle__content {
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        h3 {
+            font-size: 0.85rem;
+        }
+    }
+}

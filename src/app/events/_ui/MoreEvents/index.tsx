@@ -1,6 +1,6 @@
 'use client'
 
-import { CardEvent } from '@/components/structure/CardEvent';
+import { CardEvent } from '@/app/events/_ui/MoreEvents/CardEvent';
 import style from './page.module.scss'
 
 export const MoreEvents = () => {

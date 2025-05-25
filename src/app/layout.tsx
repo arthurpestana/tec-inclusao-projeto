@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "@/styles/globals.scss";
+import { ScreenSizeProvider } from "@/context/ScreenSizeContext";
 
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
@@ -23,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${montserrat.className}`}>
-        {children}
+        <ScreenSizeProvider>
+          {children}
+        </ScreenSizeProvider>
       </body>
     </html>
   );

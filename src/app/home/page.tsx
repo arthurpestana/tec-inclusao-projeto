@@ -17,7 +17,7 @@ import { HomePartners } from './_ui/HomePartners';
 export default function HomePage() {
     return (
         <div className={styles.home__page}>
-            <HeaderContent height='100vh' style={{ backgroundImage: 'url(/images/banner.png)' }}>
+            <HeaderContent height='100vh' style={{ backgroundImage: 'url(/images/banner.png)'}}>
                 <NavBar/>
                 <HomeBanner/>
             </HeaderContent>

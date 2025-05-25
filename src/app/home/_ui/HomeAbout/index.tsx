@@ -29,7 +29,7 @@ export const HomeAbout = () => {
                 </div>
                 <div className={styles.aboutUs__content__main__eventsQuant}>
                     <div className={styles.aboutUs__content__main__eventsQuant__Count}>
-                        <span>5+</span>
+                        <span>+3</span>
                     </div>
                     <span>Atividades</span>
                 </div>

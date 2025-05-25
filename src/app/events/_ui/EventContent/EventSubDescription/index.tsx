@@ -1,24 +1,11 @@
-'use client'
+
+'use client';
 
 import { Button } from '@/components/comp/Button';
 import style from './page.module.scss'
-import { useSearchParams } from 'next/navigation';
-import events from '@/lib/data/eventsTimeline.json';
+import { EventType } from '@/lib/types/EventType';
 
-
-export const EventSubDescription = () => {
-
-    const searchParams = useSearchParams();
-
-    const eventData = {
-        id: searchParams.get('id') || '',
-    }
-
-    const event = events.find( event => event.id == Number(eventData.id));
-
-    if (!event) {
-        return <p>Evento não encontrado.</p>;
-    }
+export const EventSubDescription = ({ event }: EventType) => {
 
     return(
         <div className={style.event_sub_description}>

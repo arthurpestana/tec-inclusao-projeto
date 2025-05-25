@@ -11,7 +11,16 @@ import { useSearchParams } from 'next/navigation';
 import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
-export const SlideComponent = () => {
+type DefaultSlide = {
+  nome: string;
+  description: string;
+};
+
+type SlideComponentProps<T> = {
+  items: T[];
+};
+
+export const SlideComponent = <T extends DefaultSlide>({ items }: SlideComponentProps<T>) => {
 
     const searchParams = useSearchParams();
 
@@ -32,7 +41,7 @@ export const SlideComponent = () => {
         autoplay={{ delay: 6000 }}
         pagination={{ clickable: true }} 
         loop>
-            {event.responsibles.map((res, index) => (
+            {items.map((res, index) => (
                 <SwiperSlide className={style.event_speaker_content_container_info} key={index}>
                     <div className={style.event_speaker_content_container_info_user}>
                         <Image 

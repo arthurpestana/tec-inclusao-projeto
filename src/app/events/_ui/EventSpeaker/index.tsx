@@ -2,7 +2,7 @@
 
 import style from './page.module.scss';
 import { useSearchParams } from 'next/navigation';
-import eventTimeline from '../../../../lib/data/home/eventsTimeline.json';
+import events from '@/lib/data/eventsTimeline.json';
 import { SlideComponent } from '@/components/comp/SlideComponent';
 
 export const EventSpeaker = () => {
@@ -12,7 +12,7 @@ export const EventSpeaker = () => {
         id: searchParams.get('id') || ''
     }
 
-    const event = eventTimeline.find(event => event.id == Number(eventData.id));
+    const event = events.find(event => event.id == Number(eventData.id));
 
     if(!event) return <p>Evento não encontrado</p>
 

@@ -7,17 +7,13 @@ import { TimelineItemData } from '@/lib/types/TimelineItemData';
 
 type TimelineItemProps = TimelineItemData;
 
-
 export const TimelineItem = ({ date, title, location, time, id }: TimelineItemProps) => {
 
     const router = useRouter();
 
     const handleClick = () => {
-        const query = new URLSearchParams({id}).toString();
-
-        router.push(`/events?${query}`);
+        router.push(`/events?id=${id}`);
     }
-
 
     return (
         <div className={styles.timelineItem__content}>

@@ -1,95 +1,128 @@
 @import '@/styles/variables.scss';
 
 .banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  padding: 0 88px;
+
+  .banner__content__main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
     width: 100%;
-    position: relative;
-    height: 100%;
-    align-items: center;
-    padding: 0px 88px;
+    max-width: 1200px;
+    color: white;
+
+    .banner__content__main__information {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+
+      p {
+        width: 70%;
+        text-align: justify;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+
+    .banner__content__main__button {
+      margin-top: 12px;
+    }
+  }
+
+  // Tablet
+  @media screen and (max-width: 1024px) {
+    padding: 0 48px;
 
     .banner__content__main {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        align-items: flex-start;
-        color: white;
+      align-items: center;
+      text-align: center;
 
-        .banner__content__main__information {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            width: 100%;
-
-            h3 {
-                font-size: 1.5rem;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-
-            h1 {
-                font-size: 4.5rem;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-
-            p {
-                width: 50%;
-                text-align: justify;
-                font-size: 1rem;
-                font-weight: 400;
-            }
+      .banner__content__main__information {
+        h1 {
+          font-size: 3.5rem;
         }
-    }
 
-    @media screen and (max-width: 768px) {
-        padding: 0px 32px 64px 32px;
-
-        .banner__content__main {
-            align-items: center;
-            text-align: center;
-
-            .banner__content__main__information {
-                width: 100%;
-
-                h1 {
-                    font-size: 48px;
-                }
-
-                h3 {
-                    font-size: 18px;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-            }
+        h3 {
+          font-size: 1.25rem;
         }
-    }
 
-    @media screen and (max-width: 480px) {
-        padding: 0px 16px 48px 16px;
-
-        .banner__content__main {
-            gap: 16px;
-
-            .banner__content__main__information {
-                gap: 6px;
-
-                h1 {
-                    font-size: 36px;
-                }
-
-                h3 {
-                    font-size: 16px;
-                }
-
-                p {
-                    font-size: 14px;
-                }
-            }
+        p {
+          width: 100%;
+          font-size: 0.95rem;
         }
+      }
     }
+  }
+
+  // Mobile
+  @media screen and (max-width: 768px) {
+    padding: 0 24px 48px;
+
+    .banner__content__main {
+      gap: 20px;
+
+      .banner__content__main__information {
+        gap: 6px;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+
+        p {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  // Small devices
+  @media screen and (max-width: 480px) {
+    padding: 0 16px 32px;
+
+    .banner__content__main {
+      gap: 16px;
+
+      .banner__content__main__information {
+        h1 {
+          font-size: 2rem;
+        }
+
+        h3 {
+          font-size: 0.875rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
 }

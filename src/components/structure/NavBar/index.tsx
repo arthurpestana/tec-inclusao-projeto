@@ -8,16 +8,15 @@ import { NavItem } from "./NavItem";
 import { NavItemType } from "@/lib/types/NavItemType";
 import navbarItems from "@/lib/data/navbarItems.json";
 import { Button } from "@/components/comp/Button";
-import { Menu, X } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const router = useRouter();
+  const [isOpenNav, setIsOpenNav] = useState(false);
 
   return (
     <nav className={styles.navBar__content}>
-      <div className={styles.navBar__content__logo}>
+      <div className={styles.navBar__content__logo} onClick={() => router.push('/')}>
         <Image
           src="/images/logo.png"
           alt="Logo"
@@ -28,9 +27,7 @@ export const NavBar = () => {
       </div>
 
       <div
-        className={`${styles.navBar__content__items} ${
-          isOpen ? styles.open : ''
-        }`}
+        className={`${styles.navBar__content__items} ${isOpenNav && styles.active}`}
       >
         {navbarItems.map((item: NavItemType) => {
           if (item.isButton) {
@@ -38,7 +35,10 @@ export const NavBar = () => {
               <Button
                 key={item.href}
                 label={item.label}
-                onClick={() => window.open(item.href, "_blank")}
+                onClick={() => {
+                  setIsOpenNav(false);
+                  window.open(item.href, "_blank", "noreferrer noopener");
+                }}
                 variant="outlined"
                 darkMode={true}
               />
@@ -49,16 +49,16 @@ export const NavBar = () => {
               key={item.label}
               href={item.href}
               label={item.label}
+              onClick={() => setIsOpenNav(false)}
             />
           );
         })}
       </div>
 
-      <div
-        className={styles.navBar__content__burger}
-        onClick={toggleMenu}
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      <div className={`${styles.navBar__content__burger} ${isOpenNav && styles.active}`} onClick={() => setIsOpenNav(!isOpenNav)} >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );

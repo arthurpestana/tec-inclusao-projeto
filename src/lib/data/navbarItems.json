@@ -1,23 +1,23 @@
 [
   {
     "label": "Home",
-    "href": "/"
+    "href": "/home"
   },
   {
     "label": "Sobre Nós",
-    "href": "#aboutUs"
-  },
-  {
-    "label": "Cronograma",
-    "href": "/home/atividades"
+    "href": "/home#aboutUs"
   },
   {
     "label": "Localização",
-    "href": "/home/atividades"
+    "href": "/home#location"
+  },
+  {
+    "label": "Cronograma",
+    "href": "/home#timeline"
   },
   {
     "label": "Contate-nos",
-    "href": "/contato",
+    "href": "https://www.instagram.com/tec_inclusao/",
     "isButton": true
   }
 ]

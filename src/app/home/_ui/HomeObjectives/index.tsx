@@ -26,7 +26,7 @@ export const HomeObjectives = () => {
             <div className={styles.objectives__content__button}>
                 <Button
                     label='Ver mais'
-                    onClick={() => { }}
+                    onClick={() => window.open('https://www.instagram.com/tec_inclusao/', '_blank', 'noreferrer noopener')}
                 />
             </div>
         </div>

@@ -3,7 +3,8 @@
 import { Button } from '@/components/comp/Button';
 import style from './page.module.scss'
 import { useSearchParams } from 'next/navigation';
-import eventsTimeLine from '../../../../lib/data/home/eventsTimeline.json';
+import events from '@/lib/data/eventsTimeline.json';
+
 
 export const EventSubDescription = () => {
 
@@ -13,7 +14,7 @@ export const EventSubDescription = () => {
         id: searchParams.get('id') || '',
     }
 
-    const event = eventsTimeLine.find( event => event.id == Number(eventData.id));
+    const event = events.find( event => event.id == Number(eventData.id));
 
     if (!event) {
         return <p>Evento não encontrado.</p>;

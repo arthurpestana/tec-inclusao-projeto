@@ -12,8 +12,8 @@
         flex-wrap: nowrap;
         width: max-content;
         width: 120vw;
-        gap: 42px;
-        animation: scrollLeft 20s linear infinite;
+        gap: 36px;
+        animation: scrollLeft 30s linear infinite;
 
         &.scrollRight {
             animation-name: scrollRight;
@@ -25,16 +25,16 @@
 
         .infiniteScroller__content__tracker__item {
             flex: 0 0 auto;
-            width: 132px;
+            padding: 0px 64px;
 
             .infiniteScroller__content__tracker__item__image {
                 width: 100%;
                 border-radius: inherit;
-                transition: all 0.5s ease-in;
+                transition: all 0.2s ease-in;
                 user-select: none;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.02);
                     cursor: pointer;
                 }
             }

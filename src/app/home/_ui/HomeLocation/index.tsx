@@ -4,7 +4,7 @@ import { SectionTitle } from '@/components/comp/SectionTitle';
 
 export const HomeLocation = () => {
     return (
-        <div className={styles.homeLocation__content}>
+        <div className={styles.homeLocation__content} id='location'>
             <div className={styles.homeLocation__content__information}>
                 <SectionTitle
                     title="Localização"

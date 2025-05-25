@@ -23,7 +23,7 @@ export const InfiniteScroller = ({ items, scrollDirection }: InfiniteScrollerPro
                             src={item}
                             alt={`Slide ${index}`}
                             width={100}
-                            height={100}
+                            height={80}
                             className={styles.infiniteScroller__content__tracker__item__image}
                         />
                     </div>

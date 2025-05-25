@@ -4,7 +4,6 @@ import Image from 'next/image';
 import navbarItems from "@/lib/data/navbarItems.json";
 import { NavItemType } from '@/lib/types/NavItemType';
 import { NavItem } from '../NavBar/NavItem';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import { Button } from '@/components/comp/Button';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -36,14 +35,8 @@ export const FooterContent = () => {
             </div>
             <div className={styles.footer__content__socials}>
                 <Button
-                    icon={<FacebookIcon />}
-                    onClick={() => window.open("", "_blank")}
-                    variant='text'
-                    darkMode={true}
-                />
-                <Button
                     icon={<InstagramIcon />}
-                    onClick={() => window.open("", "_blank")}
+                    onClick={() => window.open("https://www.instagram.com/tec_inclusao/", "_blank", "noreferrer noopener")}
                     variant='text'
                     darkMode={true}
                 />

@@ -1,4 +1,5 @@
 export type ResponsibleEvent = {
+  image: string;
   nome: string;
   description: string;
 };

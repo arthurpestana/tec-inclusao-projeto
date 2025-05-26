@@ -10,6 +10,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
 type DefaultSlide = {
+  image: string;
   nome: string;
   description: string;
 };
@@ -32,12 +33,12 @@ export const SlideComponent = <T extends DefaultSlide>({ items }: SlideComponent
                 <SwiperSlide className={style.event_speaker_content_container_info} key={index}>
                     <div className={style.event_speaker_content_container_info_user}>
                         <Image 
-                            src='/images/image.png'
+                            src={res.image}
                             alt='Palestrante'
                             width={450}
                             height={350}
                             objectFit='cover'
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             priority
                         />
                     </div>

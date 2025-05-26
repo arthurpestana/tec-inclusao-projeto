@@ -14,10 +14,10 @@ export const EventObjectives = ({ event }: EventType) => {
                         <p>{obj}</p>
                     </div>
                 ))}
-
+                
             </div>
 
-            <CircleAlert size={150}/>
+            <CircleAlert className={style.icon_hide_mobile} size={150}/>
         </div>
     );
 }

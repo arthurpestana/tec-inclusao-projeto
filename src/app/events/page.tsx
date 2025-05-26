@@ -4,7 +4,6 @@ import { NavBar } from '@/components/structure/NavBar';
 import { EventContent } from './_ui/EventContent';
 import { FooterContent } from '@/components/structure/FooterContent';
 import { MainContent } from '@/components/structure/MainContent';
-import { MoreEvents } from './_ui/MoreEvents';
 import { Suspense } from 'react';
 import { Loading } from '@/components/comp/Loading';
 
@@ -18,7 +17,6 @@ export default function EventsPage() {
                 <Suspense fallback={<Loading />}>
                     <EventContent />
                 </Suspense>
-                <MoreEvents />
             </MainContent>
             <FooterContent />
         </div>

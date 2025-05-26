@@ -9,6 +9,11 @@
     padding: 20px;
     border-bottom: 2px solid $brand-primary-5;
 
+    @media screen and (max-width:480px){
+        flex-direction: column;
+        gap: 20px;
+    }
+
     &_info {
         display: flex;
         flex-direction: column;
@@ -16,6 +21,10 @@
         height: 100%;
         text-align: justify;
         gap: 20px;
+
+        @media screen and (max-width:480px){
+            max-width: 100%;
+        }
 
         &_header {
             width: 100%;
@@ -37,5 +46,9 @@
         border-radius: 24px;
         width: 600px;
         height: 250px;
+
+        @media screen and (max-width:480px){
+            max-width: 100%;
+        }
     }
 }

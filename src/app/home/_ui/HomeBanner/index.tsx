@@ -18,7 +18,7 @@ export const HomeBanner = () => {
                     <Button 
                         variant='contained'
                         label='Inscreva-se'
-                        onClick={() => {}}
+                        onClick={() => window.open(HomeInfo.link, '_blank', 'noopener, noreferrer')}
                         darkMode={true}
                     />
                 </div>

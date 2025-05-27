@@ -22,18 +22,20 @@ export const TimelineItem = ({ date, title, location, time, id }: TimelineItemPr
             className={styles.timelineItem__content}
             onClick={isMobile ? handleClick : undefined}
         >
-            <div className={styles.timelineItem__content__date}>
-                <h3>{date.day}</h3>
-                <div className={styles.timelineItem__content__date__days}>
-                    <span>{getMonthName(Number(date.month))}</span>
-                    <span>{date.year}</span>
+            <div className={styles.timelineItem__content__left}>
+                <div className={styles.timelineItem__content__date}>
+                    <h3>{date.day}</h3>
+                    <div className={styles.timelineItem__content__date__days}>
+                        <span>{getMonthName(Number(date.month))}</span>
+                        <span>{date.year}</span>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.timelineItem__content__info}>
-                <h4>{title}</h4>
-                <div className={styles.timelineItem__content__info__text}>
-                    <span><LocationOnOutlined />{location}</span>
-                    <span><AccessTimeOutlined />{time}</span>
+                <div className={styles.timelineItem__content__info}>
+                    <h4>{title}</h4>
+                    <div className={styles.timelineItem__content__info__text}>
+                        <span><LocationOnOutlined />{location}</span>
+                        <span><AccessTimeOutlined />{time}</span>
+                    </div>
                 </div>
             </div>
             <div className={styles.timelineItem__content__button}>

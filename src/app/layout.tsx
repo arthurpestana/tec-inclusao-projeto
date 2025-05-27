@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "@/styles/globals.scss";
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ScreenSizeProvider>
           {children}
         </ScreenSizeProvider>
+        <Analytics />
       </body>
     </html>
   );

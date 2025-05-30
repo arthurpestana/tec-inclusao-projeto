@@ -5,13 +5,13 @@
     "responsibles": [
       {
         "image": "/images/logo.png",
-        "nome":"Higor Valuar",
-        "description":"A atividade conduzida por Higor Valuar tem como foco apresentar os principais golpes digitais que circulam no Brasil atualmente, com exemplos reais e atualizados. A proposta visa despertar a atenção do público para os riscos mais comuns, explicando como funcionam fraudes via redes sociais, e-mails falsos e aplicativos maliciosos. A abordagem será interativa, com simulações e análise de casos, preparando os participantes para identificar e evitar essas ameaças."
+        "nome": "Victor Augusto",
+        "description":"A atividade conduzida por Victor Augusto tem como foco apresentar os principais golpes digitais que circulam no Brasil atualmente, com exemplos reais e atualizados. A proposta visa despertar a atenção do público para os riscos mais comuns, explicando como funcionam fraudes via redes sociais, e-mails falsos e aplicativos maliciosos. A abordagem será interativa, com simulações e análise de casos, preparando os participantes para identificar e evitar essas ameaças."
       },
       {
         "image": "/images/logo.png",
-        "nome": "Iara Ferro",
-        "description": "Sob orientação de Iara Ferro, a ação extensionista foca na promoção de boas práticas de segurança digital no cotidiano. Serão abordadas rotinas seguras para uso de senhas, autenticação em dois fatores, privacidade em redes sociais e prevenção contra ataques de phishing. Com dinâmicas práticas, a atividade capacita os participantes a reconhecer riscos online e tomar decisões preventivas, promovendo uma cultura de segurança e responsabilidade digital."
+        "nome": "Thallyson",
+        "description": "Sob orientação de Thallyson, a ação extensionista foca na promoção de boas práticas de segurança digital no cotidiano. Serão abordadas rotinas seguras para uso de senhas, autenticação em dois fatores, privacidade em redes sociais e prevenção contra ataques de phishing. Com dinâmicas práticas, a atividade capacita os participantes a reconhecer riscos online e tomar decisões preventivas, promovendo uma cultura de segurança e responsabilidade digital."
       }
     ],
     "speaker": "A CONFIRMAR",
@@ -38,21 +38,16 @@
     "responsibles": [
       {
         "image": "/images/logo.png",
-        "nome": "Gabriela D",
-        "description": "Gabriela D conduzirá uma introdução acessível e interativa ao conceito de inteligência artificial, explicando de forma didática o funcionamento básico da IA e sua presença em diversas tecnologias que usamos diariamente. A atividade contará com exemplos práticos e linguagem simples, permitindo que mesmo quem não tem familiaridade com o tema compreenda suas aplicações e possibilidades."
+        "nome":"Higor Valuar",
+        "description": "Higor Valuar será responsável por apresentar o conceito de inteligência artificial de forma didática e interativa, com foco na compreensão acessível para todos os públicos. Ele explicará os tipos de IA, seu funcionamento básico e estimulará uma visão crítica sobre seu impacto na sociedade. Sua abordagem buscará aproximar o tema da realidade dos participantes, despertando o interesse e a reflexão desde os primeiros momentos da atividade."
       },
       {
         "image": "/images/logo.png",
-        "nome": "Tallita",
-        "description": "Tallita abordará como a inteligência artificial está inserida no cotidiano de forma prática, explorando casos como recomendações da Netflix, navegação por GPS e uso de assistentes virtuais. A proposta inclui demonstrações com ferramentas populares, como o ChatGPT e geradores de imagem, para mostrar a aplicabilidade da IA em situações reais e estimular o aprendizado ativo dos participantes."
-      },
-      {
-        "image": "/images/logo.png",
-        "nome": "Amanda",
-        "description": "Amanda irá conduzir um debate reflexivo sobre os impactos sociais e éticos da inteligência artificial, incentivando o público a pensar criticamente sobre questões como privacidade, mercado de trabalho, uso responsável da tecnologia e desigualdade digital. A proposta é promover uma compreensão crítica da IA e seu papel transformador na sociedade contemporânea."
+        "nome": "Iara Ferro",
+        "description": "Iara Ferro demonstrará, de forma prática, como a inteligência artificial já faz parte do nosso cotidiano. Utilizando exemplos como as recomendações da Netflix, o uso de GPS e assistentes virtuais, ela mostrará aplicações reais da IA. Iara também conduzirá demonstrações com ferramentas como o ChatGPT e geradores de imagem, promovendo um aprendizado ativo e acessível, além de provocar a reflexão crítica sobre os impactos sociais e profissionais da IA no mundo atual."
       }
     ],
-    "speaker": "Iara Martins Ferro & Higor Valuar Bailoina",
+    "speaker": "Iara Martins Ferro & Higor Valuar Bailona",
     "location": "UNITINS",
     "description": "Uma introdução prática e interativa à inteligência artificial, com linguagem acessível e exemplos do dia a dia. O público será convidado a refletir sobre o uso da IA em serviços como Netflix, Google Maps, redes sociais e assistentes virtuais. A atividade inclui explicações simples sobre o funcionamento da IA, seus tipos e uma demonstração prática com ferramentas como o ChatGPT ou geradores de imagem. Ao final, um breve debate abordará questões como o impacto da IA no mercado de trabalho e o seu futuro.",
     "objectives": [
@@ -76,13 +71,18 @@
     "responsibles": [
       {
         "image": "/images/logo.png",
-        "nome": "Victor Augusto",
-        "description": "Victor Augusto irá orientar os participantes sobre como estruturar corretamente trabalhos acadêmicos, como TCCs e artigos, de acordo com as normas técnicas exigidas. A atividade incluirá dicas práticas de organização textual, uso de normas da ABNT e ferramentas de formatação acadêmica."
+        "nome": "Gabriela D",
+        "description": "Gabriela D orientará os participantes na estruturação adequada de trabalhos acadêmicos, como TCCs, artigos e resenhas, com foco nas normas técnicas exigidas, especialmente da ABNT. Sua abordagem prática visa capacitar os estudantes para aplicar corretamente os padrões acadêmicos, promovendo segurança e autonomia na elaboração dos projetos."
       },
       {
         "image": "/images/logo.png",
-        "nome": "Thallyson",
-        "description": "Thallyson será responsável por introduzir metodologias de pesquisa científica e estratégias para revisão bibliográfica. A apresentação abordará também técnicas para desenvolver autonomia na busca por fontes confiáveis e na construção de argumentos fundamentados, preparando os participantes para seus projetos acadêmicos."
+        "nome": "Tallita",
+        "description": "Tallita será responsável por introduzir metodologias de pesquisa científica e apresentar estratégias para a realização de revisões bibliográficas eficazes. Sua participação auxiliará os alunos no desenvolvimento de habilidades investigativas e argumentativas, fundamentais para a construção de trabalhos acadêmicos bem embasados."
+      },
+      {
+        "image": "/images/logo.png",
+        "nome": "Amanda",
+        "description": "Amanda conduzirá reflexões sobre a importância da ética, da responsabilidade e da comunicação clara na produção acadêmica, destacando aspectos que fortalecem a autonomia do estudante na apresentação de seus projetos. Com uma abordagem crítica e integradora, ela contribuirá para que os participantes se sintam mais preparados para expor ideias com confiança e consistência."
       }
     ],
     "speaker": "A CONFIRMAR",
